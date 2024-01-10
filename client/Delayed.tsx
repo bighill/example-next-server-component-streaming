@@ -9,8 +9,8 @@ interface Props {
 const Delayed: React.FC<Props> = ({ delay }) => {
   return (
     <div className="box">
-      <p>Component with {delay}ms delay</p>
-      <p>{useData(delay) || "..."}</p>
+      <p>Client component with {delay}ms delay</p>
+      <p className="accent">{useData(delay) || "..."}</p>
     </div>
   );
 };

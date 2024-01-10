@@ -6,7 +6,7 @@ interface Props {
   delay: number;
 }
 
-const Delayed: React.FC<Props> = ({ delay }) => {
+const DelayedClientComp: React.FC<Props> = ({ delay }) => {
   return (
     <div className="box">
       <p>Client component with {delay}ms delay</p>
@@ -15,4 +15,4 @@ const Delayed: React.FC<Props> = ({ delay }) => {
   );
 };
 
-export default Delayed;
+export default DelayedClientComp;

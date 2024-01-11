@@ -6,7 +6,7 @@ interface Props {
   delay: number;
 }
 
-const DelayedClientComponent: React.FC<Props> = ({ delay }) => {
+const DelayedData: React.FC<Props> = ({ delay }) => {
   const [data, setData] = useState("");
 
   useEffect(() => {
@@ -21,15 +21,17 @@ const DelayedClientComponent: React.FC<Props> = ({ delay }) => {
     getData(delay);
   }, []);
 
-  return (
-    <div className="box">
-      <p>
-        <strong>Client</strong> component with {delay}ms delay
-      </p>
-      {!data && <p>Loading...</p>}
-      {data && <p className="accent">{data}</p>}
-    </div>
-  );
+  // const getData = async (delay: number) => {
+  //   return new Promise<string>((resolve) => {
+  //     setTimeout(() => {
+  //       resolve("Loaded.");
+  //     }, delay);
+  //   });
+  // };
+
+  // const data = getData(delay);
+
+  return data ? <p className="accent">{data}</p> : <p>Loading...</p>;
 };
 
-export default DelayedClientComponent;
+export default DelayedData;

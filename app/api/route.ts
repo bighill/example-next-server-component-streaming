@@ -5,8 +5,7 @@ export async function GET(request: Request) {
 
   return new Promise<Response>((resolve) => {
     setTimeout(() => {
-      //   const result = Response.json({ foo: `Hi ${delay}` });
-      const result = Response.json({ foo: `Hello` });
+      const result = Response.json({ foo: `Loaded.` });
       resolve(result);
     }, delay);
   });

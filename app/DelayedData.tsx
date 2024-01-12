@@ -19,7 +19,7 @@ const DelayedData: React.FC<Props> = ({ delay }) => {
       setData(data.foo);
     };
     getData(delay);
-  }, []);
+  }, [delay]);
 
   return data ? <p className="accent">{data}</p> : <p>Loading...</p>;
 };

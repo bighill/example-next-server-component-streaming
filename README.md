@@ -1,5 +1,13 @@
 # Example Next.js 14 server component streaming
 
+This example demonstrates a clean approach for mixing server and client components.
+
+[Demo on Netlify](https://mellifluous-shortbread-e0fb71.netlify.app/)
+
+> Below is Next.js boilerplate
+
+---
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

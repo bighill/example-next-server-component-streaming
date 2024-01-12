@@ -7,7 +7,7 @@ interface Props {
 export default function DelayedComponent({ delay }: Props) {
   return (
     <div className="box">
-      <p>Client component with {delay}ms delay</p>
+      <p>Client component with simulated delay</p>
       <DelayedData delay={delay} />
     </div>
   );

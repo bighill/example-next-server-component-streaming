@@ -21,16 +21,6 @@ const DelayedData: React.FC<Props> = ({ delay }) => {
     getData(delay);
   }, []);
 
-  // const getData = async (delay: number) => {
-  //   return new Promise<string>((resolve) => {
-  //     setTimeout(() => {
-  //       resolve("Loaded.");
-  //     }, delay);
-  //   });
-  // };
-
-  // const data = getData(delay);
-
   return data ? <p className="accent">{data}</p> : <p>Loading...</p>;
 };
 

@@ -25,6 +25,7 @@ a {
   margin: 1rem;
   border: 1px solid var(--color-fg);
 
+  /* Native nested selectors FTW */
   p {
     margin: 0;
   }
